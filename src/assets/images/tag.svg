@@ -1,0 +1,17 @@
+<svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 427319502">
+<g id="Ellipse 91" filter="url(#filter0_b_201_369)">
+<circle cx="14.1299" cy="13.5" r="13.5" fill="black" fill-opacity="0.3"/>
+<circle cx="14.1299" cy="13.5" r="13.1625" stroke="white" stroke-width="0.675"/>
+</g>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M18.2551 18.2814V7.77733V7.57483H10.0051H9.80262V7.77733V18.5023V18.8115L10.086 18.688L14.1301 16.9247L18.2551 18.688V18.2814ZM14.2099 18.3162L14.1301 18.282L14.0503 18.3162L8.55762 20.6702V7.77733C8.55762 7.39343 8.71012 7.02526 8.98158 6.7538C9.25304 6.48234 9.62122 6.32983 10.0051 6.32983H18.2551C18.639 6.32983 19.0072 6.48234 19.2787 6.7538C19.5501 7.02526 19.7026 7.39343 19.7026 7.77733V20.6702L14.2099 18.3162Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_b_201_369" x="-6.12012" y="-6.75" width="40.5" height="40.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="3.375"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_201_369"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_201_369" result="shape"/>
+</filter>
+</defs>
+</svg>
