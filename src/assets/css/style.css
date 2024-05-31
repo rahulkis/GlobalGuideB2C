@@ -1293,7 +1293,7 @@ p{font-size: 16px;}
         margin-top: 15px;
         margin-bottom: 10px;
     }
-    .distillerie_sec .product-box p{
+    .distillerie_sec .product-box p {
         opacity: 0.5;
         color: #FFF;
         font-family: Inter;
@@ -1303,9 +1303,16 @@ p{font-size: 16px;}
         line-height: 120%;
         letter-spacing: 0.16px;
         text-transform: lowercase;
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        white-space: normal;
     }
     .distillerie_sec .tranding-releases-heading a {
-        padding: 5px 12px;
+        padding: 7px 12px;
         background: #BA9775;
         color: #fff;
     }
@@ -1922,6 +1929,37 @@ p{font-size: 16px;}
 
                 .testing-owl.owl-carousel .owl-item {
                     padding-top: 50px;
+                }
+                .published-content img {
+                    position: absolute;
+                }
+                .published-content p {
+                    padding-left: 38px;
+                }
+                .bookmark_icon {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+                .bookmark_icon svg{
+                    margin-right: 0 !important;
+                }
+                #sort-by{
+                    width: 72px;
+                }
+                .catalogue_filter .custom-selectbox {
+                    border-color: #6D8190;
+                }
+                .catalogue_filter .custom-selectbox {
+                    border-color: #6D8190;
+                    color: #6D8190;
+                }
+                .catalogue_filter .custom-selectbox option {
+                    color: #fff;
                 }
                 @media screen and (max-width:767px){ 
             ul.nav.nav-tabs {

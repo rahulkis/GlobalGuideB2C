@@ -23,8 +23,8 @@ const Merchant = ({ merchant }) => {
                                     <div className='tranding-releases w-100'>
                                         <div className='tranding-releases-heading'>
                                             <div className="row w-100 align-items-start">
-                                                <div className="col-md-12 text-right text-md-end">
-                                                    <Link to="#" className=''>Explore the brand <img class="ms-1" src={ArorwImage} alt="img" /></Link>
+                                                <div className="col-md-12 text-right text-md-end pe-0">
+                                                    <Link to="#" className=''>Explore more<img class="ms-1" src={ArorwImage} alt="img" /></Link>
                                                 </div>
                                             </div>
                                         </div>

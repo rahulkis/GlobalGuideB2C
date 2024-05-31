@@ -6,7 +6,7 @@ const Product = ({ product }) => {
     <div className="container mt-4">
       <div className="row g-3">
         <div className="col-12">
-          <div className="product-box row">
+          <div className="product-box row p-0">
             <div className="product-image-container col-12 col-md-5">
               <img src={`${process.env.REACT_APP_GLOBAL_SERVER_IMAGE_URL}/${product.release_logo}`} alt="Product" className="product-image" />
             </div>
@@ -32,7 +32,7 @@ const Product = ({ product }) => {
                 Recommended
               </div>
               <div className="d-flex flex-wrap align-items-center mt-4">
-                <FaBookmark Heart className="icon me-1" />
+                <div className='bookmark_icon'><FaBookmark Heart className="icon me-1" /></div>
                 <NavLink
                   // to={`/products/${product.release_id}`} 
                   to={`/products/${product.release_id}`}

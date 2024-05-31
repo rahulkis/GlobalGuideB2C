@@ -3,7 +3,8 @@ import React from 'react'
 const ProductFilter = () => {
   return (
     <>
-        <h3>Setup the filters</h3>
+        <h3 className='text-uppercase mb-3'>Setup the filters</h3>
+        <div className='catalogue_filter'>
         <div className="form-group mb-3">
             <label htmlFor="country">Country</label>
             <select className="form-control custom-selectbox" id="country" style={{ width: '100%' }}>
@@ -14,7 +15,6 @@ const ProductFilter = () => {
             </select>
         </div>
         
-
         <div className="form-group mb-3">
             <label htmlFor="distillery_merchant">Distillery/Merchant</label>
             <select className="form-control custom-selectbox" id="Distillery/Merchant" style={{ width: '100%' }}>
@@ -31,7 +31,7 @@ const ProductFilter = () => {
             </select>
         </div>
 
-        <div className="form-group mb-3">
+        <div className="form-group mb-3     ">
             <label htmlFor="release">Release/SKU</label>
             <select className="form-control custom-selectbox" id="release" style={{ width: '100%' }}>
             <option value="">Select Release/SKU</option>
@@ -39,12 +39,13 @@ const ProductFilter = () => {
             </select>
         </div>
 
-        <div className="form-group mb-3">
+        <div className="form-group mb-3 disabled-select">
             <label htmlFor="collections">Collections</label>
             <select className="form-control custom-selectbox" id="brand" style={{ width: '100%' }}>
             <option value="">Select Collections</option>
             
             </select>
+        </div>
         </div>
     </>
   )

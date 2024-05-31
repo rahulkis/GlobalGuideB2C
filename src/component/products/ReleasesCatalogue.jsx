@@ -33,12 +33,12 @@ const ReleasesCatalogue = () => {
             <div className="box">
               <h3 className="text-uppercase">Releases Catalogue</h3>
 
-              <div className="d-flex flex-wrap align-items-center mb-2">
+              <div className="d-flex flex-wrap align-items-center mb-2 tab-filters ps-0 ">
                 <span className="release-label me-3 mb-1 active">Top Releases</span>
                 <span className="release-label me-3 mb-1">Recommended Releases</span>
                 <span className="release-label me-3 mb-1">Premium Releases</span>
                 <div className="ms-auto">
-                  <select className="custom-selectbox ms-auto" id="sort-by">
+                  <select className="ms-auto form-select" id="sort-by">
                     <option value="">Sort By</option>
                     <option value="Name">Name</option>
                     <option value="Date">Date</option>

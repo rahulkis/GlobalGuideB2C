@@ -22,7 +22,7 @@ const Notifications = () => {
 
               <div className='row w-100 m-0 mt-2'>
               <div className='p-0 col-8 col-md-8'>
-                <span className='review'><img src={CircleImage} alt='img' className='me-2'/> Your review was published</span>
+                <span className='published-content'><img src={CircleImage} alt='img' className='me-2'/> <p>Your review was published</p></span>
               </div>
               <div className='p-0 col-4 col-md-4 text-end'>
                 <Link to="/#">View posting </Link>
