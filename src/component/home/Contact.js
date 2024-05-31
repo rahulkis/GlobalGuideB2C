@@ -13,7 +13,7 @@ function Contact() {
             <div className="row">
               <div className="col-md-5">
                 <div className="contact_form">
-                  <h2 className="heading mb-3">Contact Us</h2>
+                  <h2 className="heading mb-3 ms-0">Contact Us</h2>
                   <div className="form-group">
                     <div className="row">
                       <div className="col-md-6">

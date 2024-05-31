@@ -3,7 +3,7 @@
         
 /* Common Css Start */
 html{ scroll-behavior: smooth; }
-body{  overflow-y:auto !important ;  margin: 0;padding: 0;color: #fff;background: #070807;font-family: "Inter", sans-serif;font-size: 16px;}
+body{  overflow-y:auto !important ;  margin: 0;padding: 0 !important;color: #fff;background: #070807;font-family: "Inter", sans-serif;font-size: 16px;}
 body:focus{ outline: none; }
 img,ul,h1,h2,h3,h4,h5,h6,p{ margin:0px; padding:0px; }
 *{ margin:0px; padding:0px; }
@@ -290,6 +290,7 @@ p{font-size: 16px;}
             border-radius: 0;
             background: none;
             color: #fff;
+            width: 100%;
         }
         .distilleries_carousel .carousel-inner {
             padding: 1em;
@@ -322,7 +323,14 @@ p{font-size: 16px;}
             height: 1px;
             object-fit: cover;
         }
-
+        .distilleries-slider .cards-wrapper .card-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 48px;
+        }
 /* trending section css start */
 .trending-sec .container{
     max-width: 1064px;
@@ -360,6 +368,11 @@ p{font-size: 16px;}
       font-family: "Cormorant Infant";
       min-height: 48px;
       margin-bottom: 16px;
+      display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .trending-item {
       margin-bottom: 10px;
@@ -374,6 +387,7 @@ p{font-size: 16px;}
       background: #BA9775;
       max-width: 160px;
   }
+  
   .trnd_buttons {
     display: flex;
     align-items: center;
@@ -396,6 +410,7 @@ p{font-size: 16px;}
 }
 .brands-tabs .nav-link.active img,.brands-tabs .nav-link:hover img{
     opacity: 1;
+    text-decoration: none;
 }
 .brands-tabs #myTabContent p {
     margin-bottom: 15px;
@@ -498,6 +513,7 @@ p{font-size: 16px;}
             margin-right: 48px;
             position: relative;
             border-bottom: 0;
+            text-decoration: none;
         }
         .navigation .nav-item:last-child a.nav-link{
            margin-right: 0;
@@ -605,6 +621,7 @@ p{font-size: 16px;}
             line-height: 96.275%;
             letter-spacing: 0.32px;
             text-transform: uppercase;
+            text-decoration: none;
         }
         .landing-sidebar-menu {
             margin-left: 70px;
@@ -1028,6 +1045,7 @@ p{font-size: 16px;}
         border-bottom: 1px solid #535353;
         border-radius: 0;
         color: #fff;
+        appearance: none;
     }
     .contact_form select option{
       color:#000;
@@ -1097,7 +1115,7 @@ p{font-size: 16px;}
        margin: auto;
     }
     .brand-logos{
-        max-width: 800px;
+        /* max-width: 800px; */
         margin: auto;
         justify-content: center;
     }
@@ -1163,7 +1181,7 @@ p{font-size: 16px;}
         right: 0;
     }
     .brands-slider-main .owl-nav {
-        max-width: 760px;
+        max-width: 29.5%;
         width: 100%;
         transform: translateY(-40%);
         position: absolute;
@@ -1192,7 +1210,10 @@ p{font-size: 16px;}
         max-width: 1130px;
         border-radius: 8px;
         margin-top: 32px;
-        padding: 24px;
+        padding: 15px;
+    }
+    .nf-list {
+        display: inline-flex;
     }
     .polls_product label {
         color: #6D8190;
@@ -1308,6 +1329,13 @@ p{font-size: 16px;}
         
     }
 
+    @media screen and (max-width:1400px){
+        .release_box button.btn.btnColor {
+            font-size: 90%;
+        }
+
+    }
+
     @media screen and (max-width:1599px){
         .header .landing-sidebar-menu .nav-link{
             font-size: 24px;
@@ -1328,4 +1356,591 @@ p{font-size: 16px;}
         .quick-links {
             text-align: center;
         }
+        section.collection {
+            background-size: 730px;
+        }
     }
+
+
+    .nav-link {
+        color: inherit;
+        padding-bottom: 5px; /* Adding some padding to make the border more visible */
+        border-bottom: 2px solid transparent; /* Ensure a consistent space for the border */
+        transition: border-color 0.3s; /* Smooth transition for the border color */
+      }
+      
+      .nav-link:hover {
+        border-bottom: 2px solid #fff; /* Bootstrap primary color */
+      }
+      
+      .active-link {
+        border-bottom: 2px solid #fff; /* Bootstrap primary color */
+      }
+    
+      .box {
+        /* border: 1px solid #ccc; */
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #111211;
+        color: #fff;
+      }
+      
+    
+      .product-box {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+      .release-listing .product-box {
+        padding: 15px;
+    }
+      
+      .product-image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 250px; /* Adjust as needed for desktop */
+        overflow: hidden;
+        border-radius: 10px 0 0 10px;
+        margin-left: -20px;
+      }
+      @media only screen and (max-width: 768px) {
+        .product-image-container {
+          flex: 0 0 auto;
+          width: 100%;
+          max-width: 100%; /* Adjust as needed for desktop */
+          overflow: hidden;
+          border-radius: 10px 0 0 10px;
+          margin-left: 0px;
+          margin-top: 10px;
+        }
+      }
+      
+      .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .product-details {
+        padding: 10px;
+        flex-grow: 1;
+      }
+      .product-details h3 {
+        font-family: 'Inter';
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .single-col .product-box .tranding-releases {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+      .author {
+        font-style: italic;
+      }
+      
+      .icon {
+        margin-right: 5px;
+      }
+      
+      .rating-icon {
+        color: #fff; /* Set color for rating icon */
+      }
+      
+      .comment-icon {
+        margin-left: 5px;
+      }
+      
+      .radius_10 {
+        border-radius: 10px;
+        padding: 2px 6px;
+        background-color: #1d1e1d;
+      }
+    
+      .release-label {
+        border-radius: 10px;
+        padding: 2px 6px;
+        background-color: #1d1e1d;
+        border: 1px solid #6D8190;
+        color: #6D8190;
+      }
+      .release-label.active {
+        background-color: #111211;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    
+      .btnColor, .btnColor:hover {
+        background-color: #ba9775;
+        color: white;
+      }
+      
+      .form-control {
+        appearance: auto;
+        /* background-color: #FFFFFF;
+        border: 0.2px solid #FFFFFF; */
+      }
+    
+      .custom-selectbox {
+        width: 100%;
+        /* font-family: 'Cormorant Infant', serif; */
+        letter-spacing: 0.01em;
+        text-align: left;
+        background-color: #111211; /* Match the box background color */
+        border: 0.2px solid #FFFFFF;
+        color: inherit; /* Inherit text color from parent */
+      }
+    
+      .custom-selectbox:focus {
+        color: inherit; /* Ensure color is inherited when focused */
+        background-color: #111211; /* Ensure background matches on focus */
+        border-color: #FFFFFF; /* Optional: adjust border color on focus */
+        outline: none; /* Remove default outline */
+        box-shadow: none; /* Remove default shadow */
+      }
+    
+      .custom-label {
+        border-radius: 10px;
+        padding: 10px 15px;
+        background-color: #333;
+        color: #fff;
+        font-family: 'Cormorant Infant', serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+        flex: 1;
+        margin: 0 5px;
+      }
+
+      .custom_breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+        content: ">";
+        color: #fff;
+    }
+    .custom_breadcrumb .breadcrumb-item a{
+        color: #fff;
+    }
+    .custom_breadcrumb .breadcrumb-item.active{
+      color: #fff;
+      opacity: 50%;
+    }
+    .brandinfo_right h5 {
+        color: #BA9775;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.275%;
+        letter-spacing: 0.16px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    .brandinfo_right p {
+        color: #000;
+        font-family: "Cormorant Infant";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.275%;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+    }
+    .details_social a {
+        display: block;
+        margin-bottom: 12px;
+    }
+    .details_social a img{
+        margin-right: 5px;
+    }
+    .product_description h2 {
+        max-width: 402px;
+        color: #000;
+        text-align: center;
+        font-family: "Cormorant Infant";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.275%;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        margin: auto;
+    }
+    .gallery-slider .owl-item{
+        transform: scale(0.7);
+        transition: all 0.5s ease-in-out;
+    }
+    .gallery_main_sec .owl-nav {
+        max-width: 50%;
+        width: 100%;
+        left: 25%;
+        transform: translateY(-40%);
+        position: absolute;
+        top: 40%;
+    }
+    .gallery_main_sec .owl-nav button {
+        width: 56px;
+        height: 56px;
+        background-image: url(../images/icons/gallery_arrow.svg) !important;
+    }
+    .gallery_main_sec .owl-nav button.owl-next{
+      transform: rotate(180deg);
+    }
+    .gallery_main_sec .owl-nav button span{
+        display: none;
+    }
+    .gallery_main_sec .owl-prev {
+        position: absolute;
+        left: 0;
+    }
+    .gallery_main_sec .owl-next {
+        position: absolute;
+        right: 0;
+    }
+    .gallery_main_sec .cards-wrapper .card img {
+        border-radius: 8px;
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+    .gallery-slider .owl-item.active.center img {
+        transform: scale(2);
+        transition: all 0.5s ease-in-out;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .gallery_main_sec{
+        min-height: 200px;
+        margin-bottom: 70px;
+    }
+    .boxes-bg {
+        background: transparent !important;
+        position: relative;
+        z-index: 1;
+    }
+    .boxes-bg::before{
+        content: "";
+        background-color: #fff;
+        opacity: 4%;
+        left:0;
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        border-radius: 8px;
+        z-index: -1;
+    }
+    .tranding-slider .carousel-indicators {
+        display: none;
+    }
+    
+    
+    .tranding-slider .carousel-control-next-icon, .tranding-slider .carousel-control-prev-icon {
+        background-color: #bd9b7a;
+        opacity: 1;
+        background-size: 16px;
+    }
+    .release_box .overlay{
+        background-color: #000;
+        padding: 8px 15px;
+    }
+    .subscribe-sec h1 {
+        color: #FFF;
+        font-family: "Cormorant Infant";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96.275%;
+        letter-spacing: 0.28px;
+        text-transform: uppercase;
+    }
+    .newsletter-subscription input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        margin: 0 10px;
+    }
+    .newsletter-subscription input::placeholder{
+        color: #fff;
+        opacity: 0.6;
+    }
+    .flavours_sec .release-tab-header {
+        padding: 15px 7px 18px 0;
+    }
+    .flavours_sec .release-tab .nav-tabs .nav-link.active:after, .flavours_sec .release-tab .nav-tabs .nav-link:hover:after {
+        bottom: -18px;
+    }
+    .falvours_tab_content {
+        margin: 40px 0px 10px 10px;
+    }
+    .falvours_tab_content h2 {
+        color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        letter-spacing: -0.24px;
+        padding-top: 10px;
+    }
+    .falvours_tab_content p{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+        letter-spacing: -0.21px;
+        opacity: 0.8;
+        padding-bottom: 10px;
+    }
+      /* --------------------ratting new------------------- */
+
+      #rating h4,  #rating h5{ 
+        text-transform: uppercase
+            }
+        
+        
+            #rating h5{
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;  
+            }
+        
+            #rating .nav-tabs .nav-link {
+                margin-bottom: calc(-1* var(--bs-nav-tabs-border-width));
+                border: none; 
+                color: #FFF;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;  
+        text-transform: uppercase;
+        opacity: .5;
+        background: none;
+            }
+        
+        
+        
+            #rating .nav-tabs .nav-item.show .nav-link, 
+            #rating .nav-tabs .nav-link.active{
+                opacity: 1;
+            }
+        
+            .rate-visual{
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                padding-top: 15px;
+            }
+            .rate-visual .big-num{
+                color: #FFF; 
+                text-align: center;
+                font-family: "Cormorant Infant";
+                font-size: 46px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 96.275%;  
+                letter-spacing: 0.56px;
+                text-transform: uppercase;
+            }
+        
+            .rate-visual .star{
+               display: flex;
+               gap: 3px;
+               /* padding: 15px 0 0 0; */
+            }
+            .rate-visual .star svg{
+                stroke-width: 1px;
+                stroke: #BA9775;
+                width: 27px;
+                }
+                svg.fill{
+                    fill: #BA9775;
+                }
+        
+        
+            .rate-visual .rate-count{
+                color: #BA9775; 
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 160%; 
+                text-transform: uppercase;
+                /* padding: 15px 0 0 0; */
+            }
+        
+        
+        
+        
+        
+        
+        
+            .rt-main{
+                display: inline-flex;
+                align-items: flex-start;
+                gap: 48px;
+                margin-top: 35px;
+            }
+        
+            .rt-container{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .rt-small-hd{
+                color: #FFF; 
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; 
+        text-transform: uppercase;
+        opacity: .5;
+            }
+            .rt-big-hd{
+                color: #FFF; 
+                text-align: center;
+                font-family: "Cormorant", serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 96.275%;  
+                letter-spacing: 0.28px;
+                text-transform: uppercase;
+        
+            }
+            @media screen and (max-width:767px){
+           
+                ul.nav.nav-tabs {
+                    flex-wrap: nowrap;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                }
+        
+                .rt-main { 
+                    flex-wrap: wrap;
+                }
+            }
+               
+        
+        
+               /* ----------------tasting ------------------------- */
+        
+              #tasting .owl-carousel .owl-nav button.owl-prev, 
+              #tasting  .owl-carousel .owl-nav button.owl-next {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px; 
+                    border: none;
+                    font-size: 18px;
+                    padding: 5px 10px;
+                    margin: 0 5px;
+                    background-image: url(../images/tast-arrow.svg);
+                    width: 24px;
+                    height: 12px;
+                    background-repeat: no-repeat;
+        
+                }
+        
+                #tasting .owl-carousel .owl-nav button.owl-prev {
+                    right: -32px;
+                    transform: rotate(180deg);
+                }
+        
+                #tasting  .owl-carousel .owl-nav button.owl-next {
+                    right: 10px;
+                }
+        
+                #tasting  .owl-carousel .owl-nav {
+                    position: absolute;
+                    top: -27px;
+                    right: 60px;
+                }
+        
+                #tasting  .owl-prev span, #tasting  .owl-next span{
+                    display: none;
+            
+                   }
+               
+        .owl-stage-outer{
+            position: relative;
+        }
+        
+                .tast-right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            text-transform: uppercase;
+        }
+                .tast-hd-small{
+                    color: #FFF; 
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;  
+                    opacity: .5;
+                }
+        
+                .tast-name{
+                    color: #BA9775;
+                    -webkit-text-stroke-width: 0.20000000298023224;
+                    -webkit-text-stroke-color: #BA9775;
+                    font-family: "Cormorant Infant";
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 96.275%; 
+                    letter-spacing: 0.28px; 
+                }
+        
+                .tast-score{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%;   
+                }
+        
+                .tast-score span {
+                    color: #BA9775;
+                }
+
+                .testing-owl.owl-carousel .owl-item {
+                    padding-top: 50px;
+                }
+                @media screen and (max-width:767px){ 
+            ul.nav.nav-tabs {
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+        }
+                
+    
+    @media screen and (max-width:1599px){
+        .flavours_sec .release-tab .nav-tabs .nav-link {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (min-width:1600px) {
+        .brandinfo_right {
+            padding-left: 50px;
+        }
+    }
+   

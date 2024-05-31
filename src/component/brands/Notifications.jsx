@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ArorwImage from '../../assets/images/rightarrow.png'
 import CircleImage from '../../assets/images/circle.svg'
-import { FaArrowRight, FaCheckCircle } from 'react-icons/fa'
+// import { FaArrowRight, FaCheckCircle } from 'react-icons/fa'
 const Notifications = () => {
   return (
     <>
@@ -22,7 +22,7 @@ const Notifications = () => {
 
               <div className='row w-100 m-0 mt-2'>
               <div className='p-0 col-8 col-md-8'>
-                <span><img src={CircleImage} alt='img' className='me-2'/> Your review was published</span>
+                <span className='review'><img src={CircleImage} alt='img' className='me-2'/> Your review was published</span>
               </div>
               <div className='p-0 col-4 col-md-4 text-end'>
                 <Link to="/#">View posting </Link>

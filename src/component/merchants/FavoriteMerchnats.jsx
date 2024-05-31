@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa'
-import t1Image from './../../assets/images/t-1.png'
+// import t1Image from './../../assets/images/t-1.png'
 import t2Image from './../../assets/images/b.png'
 
 const FavoriteMerchants = () => {

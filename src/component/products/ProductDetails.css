@@ -1,0 +1,260 @@
+.background-image {
+  background: url('./../../assets/images/products-bg.png') no-repeat;
+  background-size: cover;
+  padding-bottom: 130px;
+}
+
+.gallery-background-image {
+  background-image: url('./../../assets/images/gallery_background.png');
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.breadcrumb-row {
+  padding-top: 20px;
+}
+
+.back-row {
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.back-text {
+  margin-left: 10px;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.content-column {
+  margin-top: 60px;
+}
+
+.numbered-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.number-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #BA9775;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.number-box span {
+  transform: rotate(-45deg);
+  font-family: "Cormorant", serif;
+  font-size: 24px;
+}
+
+.number-text {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.image-column {
+  position: relative;
+}
+
+.overlapping-image {
+  position: absolute;
+  top: 52%;
+  right: -90%;
+  transform: translateY(-52%);
+}
+
+.responsive-image {
+  max-width: 280px;
+  min-height: 400px;
+  object-fit: cover;
+}
+
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.find-stores-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.icon-circle {
+  margin-left: 10px;
+}
+
+
+.custom-card {
+  /* background-color: #111211;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff; */
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.more-flavor {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.small-image {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-caption-custom {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.explore-btn,
+.explore-btn:hover {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #BA9775;
+  color: #fff;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.list-item {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.subscriber-background-image {
+  background-image: url('./../../assets/images/bg-subscriber.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.newsletter-subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Adjust gap for spacing between inputs and button */
+}
+
+.input-container {
+  display: flex;
+  /* Make inputs side-by-side */
+}
+
+.full-name,
+.email {
+  width: 100%;
+  /* Set width to 100% for side-by-side filling */
+  padding: 10px;
+  /* Adjust padding for content spacing */
+  border: none;
+  /* Remove default border */
+  border-bottom: 1px solid #ddd;
+  /* Add thin bottom border */
+  outline: none;
+  /* Remove outline on focus */
+  letter-spacing: 0.01em;
+  text-align: left;
+  background-color: #111211;
+  border: 0.2px solid #FFFFFF;
+  color: inherit;
+}
+
+.full-name,
+.email::placeholder {
+  /* Style placeholder text */
+  font-size: 16px;
+  /* Adjust font size as needed */
+}
+
+
+
+.quote-container {
+  position: relative;
+  display: inline-block;
+  /* margin: 20px;
+    padding: 20px; */
+  line-height: 1.5;
+}
+
+.quote-mark {
+  position: absolute;
+  font-size: 4rem;
+  /* Larger size for the quotes */
+  color: #007bff;
+  /* Adjust color as necessary */
+}
+
+.left-quote {
+  top: -70px;
+  /* Adjust positioning to place at the top left */
+  left: 5px;
+}
+
+.right-quote {
+  bottom: -28px;
+  /* Adjust positioning to place at the bottom right */
+  right: -29px;
+}
+
+.quote-content {
+  display: inline-block;
+  position: relative;
+}

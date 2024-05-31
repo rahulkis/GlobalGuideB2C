@@ -15,7 +15,7 @@ const News = () => {
             <div className="col-8">
               <div className="rt-hd top-m">
                 <div className="button btn-right">
-                  <img className="group" src={Button2Image} alt=''/>
+                  <img className="group" src={Button2Image} alt='ddd'/>
                   <span className="text-wrapper-28">Explore more</span>
                 </div>
               </div>
@@ -142,7 +142,7 @@ const News = () => {
                   <div className="tab-pane fade show active" id="news1" role="tabpanel" aria-labelledby="news1-tab" tabindex="0">
                     <div className="overlap-group-wrapper">
                       <div className="overlap-group-4">
-                        <img src={RectangleImage} className="w-100" />
+                        <img src={RectangleImage} className="w-100" alt=''/>
                         <div className="date-place">
                           <div className="date">22 Dec</div>
                           <div className="gap">|</div>

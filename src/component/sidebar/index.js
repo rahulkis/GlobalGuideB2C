@@ -5,7 +5,7 @@ import Brands from "../brands/Brands";
 import Product from "../products/Product";
 import Distilleries from "../distillery/Distilleries";
 import ReleasesCatalogue from "../products/ReleasesCatalogue";
-
+import ProductDetails from "../products/ProductDetails";
 const SideBarRouting = () => {
   return (
     <>
@@ -13,6 +13,7 @@ const SideBarRouting = () => {
           <Route path='/' element = { <Home /> } />
           <Route  path='/brands' element = { <Brands /> } />
           <Route  path='/products' element = { <ReleasesCatalogue  /> } />
+          <Route  path="/productdetails" element={<ProductDetails />} />
           <Route  path='/distilleries' element = { <Distilleries  /> } />
       </Routes> 
     </>
